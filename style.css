@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url("images/royal.monarchs.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+
+    position: relative; /* important for absolute positioning inside */
+}
+
+/* Hero container stays fixed in center of screen */
+.hero {
+    position: absolute;       /* position relative to body */
+    top: 50%;                 /* vertical center */
+    left: 50%;                /* horizontal center */
+    transform: translate(-50%, -50%); /* center exactly */
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    color: white;
+}
+
+/* Heading */
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+/* Description */
+.hero .description {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+.superman {
+    position: absolute;       /* position relative to body */
+    top: 50%;                 /* vertical center */
+    left: 50%;                /* horizontal center */
+    transform: translate(-50%, -50%); /* center exactly */
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    color: white;
+}
+
+/* Heading */
+.superman h1 {
+    h1font-size: 3em;
+    margin-bottom: 20px;
+}
+    
+
+
+/* Description */
+.superman .description{
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+/* Discord logo fixed at bottom center */
+.discord-logo {
+    position: fixed;          /* stays in place while scrolling */
+    bottom: 20px;             /* distance from bottom */
+    left: 50%;                /* horizontal center */
+    transform: translateX(-50%); /* perfect center */
+    z-index: 1000;            /* stays above other elements */
+}
+
+.discord-logo img {
+    width: 50px;              /* size of the logo */
+    height: 50px;             /* keeps it square */
+    transition: transform 0.3s, filter 0.3s; /* smooth hover */
+}
+
+/* Hover effect */
+.discord-logo img:hover {
+    transform: scale(1.2);    /* grow a bit */
+    filter: brightness(1.2);  /* brighten for glow effect */
+    cursor: pointer;
+}
