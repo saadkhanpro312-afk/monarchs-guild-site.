@@ -79,3 +79,39 @@ body {
     filter: brightness(1.2);  /* brighten for glow effect */
     cursor: pointer;
 }
+.discord-widget-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 20px;
+}
+
+.discord-widget {
+    background: rgba(0,0,0,0.6);
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    color: white;
+}
+
+.discord-widget .header {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.discord-widget .staff-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.discord-widget .staff-list li {
+    margin-bottom: 5px;
+}
+
+.discord-widget .role {
+    font-weight: bold;
+}
