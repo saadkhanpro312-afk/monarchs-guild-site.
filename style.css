@@ -1,21 +1,22 @@
+/* Body as flex container */
 body {
-    margin: 0;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertical center */
+    align-items: center;     /* horizontal center */
+    min-height: 100vh;       /* full screen */
     background-image: url("images/royal.monarchs.avif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     font-family: Arial, sans-serif;
-
-    position: relative; /* important for absolute positioning inside */
+    position: relative;
+    overflow-x: hidden;
 }
 
-/* Hero container stays fixed in center of screen */
+/* --- Hero container --- */
+/* Hero container */
 .hero {
-    position: absolute;       /* position relative to body */
-    top: 50%;                 /* vertical center */
-    left: 50%;                /* horizontal center */
-    transform: translate(-50%, -50%); /* center exactly */
     text-align: center;
     max-width: 800px;
     padding: 20px;
@@ -24,22 +25,22 @@ body {
     color: white;
 }
 
-/* Heading */
+
+/* Hero heading */
 .hero h1 {
     font-size: 3em;
     margin-bottom: 20px;
 }
 
-/* Description */
+/* Hero description */
 .hero .description {
     font-size: 1.2em;
     line-height: 1.6;
 }
+
+/* Superman (second page box) */
+/* Superman container (second page) */
 .superman {
-    position: absolute;       /* position relative to body */
-    top: 50%;                 /* vertical center */
-    left: 50%;                /* horizontal center */
-    transform: translate(-50%, -50%); /* center exactly */
     text-align: center;
     max-width: 800px;
     padding: 20px;
@@ -48,16 +49,12 @@ body {
     color: white;
 }
 
-/* Heading */
 .superman h1 {
-    h1font-size: 3em;
+    font-size: 3em;
     margin-bottom: 20px;
 }
-    
 
-
-/* Description */
-.superman .description{
+.superman .description {
     font-size: 1.2em;
     line-height: 1.6;
 }
